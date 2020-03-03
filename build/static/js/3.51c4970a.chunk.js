@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-news-board"]=this["webpackJsonpreact-news-board"]||[]).push([[3],{32:function(e,n,t){"use strict";t.r(n);var a=t(0),r=t.n(a);n.default=function(){return r.a.createElement(r.a.Fragment,null)}}}]);
+//# sourceMappingURL=3.51c4970a.chunk.js.map

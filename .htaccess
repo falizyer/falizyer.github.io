@@ -1,2 +1,1 @@
-Redirect 301 / http://www.domain.com/build/
-DirectoryIndex index.html
+Redirect 200 / http://falizyer.github.io/build/

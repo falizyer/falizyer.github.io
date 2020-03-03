@@ -1,0 +1,1 @@
+{"version":3,"sources":["component/Contacts.tsx"],"names":["Contacts"],"mappings":"2HAAA,2BAMeA,UAJf,WACE,OAAQ","file":"static/js/4.0c439f1a.chunk.js","sourcesContent":["import React from 'react';\r\n\r\nfunction Contacts() {\r\n  return (<></>)\r\n}\r\n\r\nexport default Contacts;"],"sourceRoot":""}
