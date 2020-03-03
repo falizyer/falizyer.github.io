@@ -1,0 +1,19 @@
+@import "assets/variables";
+@import "assets/mixins/common";
+@import "assets/mixins/section-container";
+
+.app-navigation {
+  display: flex;
+  flex-direction: row;
+
+  // TODO  move to separate component
+  &__list {
+    @include margin-center;
+    display: flex;
+    flex-direction: row;
+
+    li {
+      margin-right: 10px;
+    }
+  }
+}

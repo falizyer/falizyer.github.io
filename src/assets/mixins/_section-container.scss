@@ -1,0 +1,12 @@
+@import "assets/mixins/common";
+
+@mixin section-container($direction: column) {
+  display: flex;
+  flex-direction: $direction;
+
+  &__content {
+    @include margin-center;
+    width: $CONTAINER_MAX_WIDTH;
+    padding: $CONTAINER_PADDING;
+  }
+}

@@ -1,0 +1,6 @@
+@import "assets/variables";
+@import "assets/mixins/section-container";
+
+.component-about {
+  @include section-container;
+}

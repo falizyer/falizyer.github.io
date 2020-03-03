@@ -1,6 +1,17 @@
+@import "assets/variables";
+
 .app-logo {
   height: 40vmin;
   pointer-events: none;
+  margin: 0 auto;
+}
+
+.app-header {
+  display: flex;
+  flex-direction: row;
+  width: $CONTAINER_MAX_WIDTH;
+  margin: 0 auto;
+  padding: $CONTAINER_PADDING;
 }
 
 @media (prefers-reduced-motion: no-preference) {

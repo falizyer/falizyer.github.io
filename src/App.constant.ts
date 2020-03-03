@@ -3,17 +3,17 @@ import { Routes } from "model/App.model";
 
 export const ROUTES: Routes = {
   notFound: {
-    path: '/not-found',
-    component: React.lazy(() => import('./common/NotFound'))
+    path: "/not-found",
+    component: React.lazy(() => import("./common/NotFound"))
   },
   About: {
-    path: '/about',
+    path: "/about",
     exact: true,
-    component: React.lazy(() => import('./component/About'))
+    component: React.lazy(() => import("./component/About"))
   },
   Contacts: {
-    path: '/contacts',
+    path: "/contacts",
     exact: true,
-    component: React.lazy(() => import('./component/Contacts'))
+    component: React.lazy(() => import("./component/Contacts"))
   }
 };
