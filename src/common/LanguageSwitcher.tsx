@@ -2,6 +2,7 @@ import React, { ChangeEvent, useContext } from "react";
 import { AppLanguages } from "model/App.model";
 import useTranslation from "hooks/UseTranslation";
 import { LanguageActionType, LanguageContext } from "../contexts";
+import i18n from "../i18n";
 
 const languageList = [ {
   value: AppLanguages.en,
@@ -35,7 +36,8 @@ function LanguageSwitcher() {
   );
 
   function handleChangeLanguage(event: ChangeEvent<HTMLSelectElement>) {
-    changeLanguage(event.target.value);
+    i18n.changeLanguage(event.target.value)
+      .then(() => changeLanguage(i18n.language));
   }
 }
 

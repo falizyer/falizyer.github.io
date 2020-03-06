@@ -8,7 +8,7 @@ export default function useTranslation() {
     t: (id: string): string => i18n.t(id),
     i18n,
     changeLanguage(lng: string) {
-      dispatch({ action: LanguageActionType.CHANGE_LANGUAGE, payload: lng });
+      dispatch({ type: LanguageActionType.CHANGE_LANGUAGE, payload: lng });
     }
   };
 }
