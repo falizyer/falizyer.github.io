@@ -1,28 +1,35 @@
 import React, { Suspense } from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
-import logo from "assets/logo.svg";
+import { Route, Switch } from "react-router-dom";
 
 import { ROUTES } from "./App.constant";
 
+import ProxyRoute from "./common/ProxyRoute";
+
 import NotFound from "./common/NotFound";
 import AppNavigation from "./common/AppNavigation";
+import ProxyRedirect from "./common/ProxyRedirect";
+import Header from "./common/Header";
+import LanguageSwitcher from "./common/LanguageSwitcher";
 
 import "./App.scss";
 
 function App() {
   return (
     <>
-      <header className="app-header">
-        <AppNavigation />
-      </header>
+      <Header>
+        <Suspense fallback={ (<div>loading...</div>) }>
+          <AppNavigation/>
+          <LanguageSwitcher/>
+        </Suspense>
+      </Header>
       <Suspense fallback={ (<div>loading...</div>) }>
         <Switch>
-          <Route
+          <ProxyRoute
             path={ ROUTES.About.path }
             component={ ROUTES.About.component }
             exact={ ROUTES.About.exact }
           />
-          <Route
+          <ProxyRoute
             path={ ROUTES.Contacts.path }
             component={ ROUTES.Contacts.component }
             exact={ ROUTES.Contacts.exact }
@@ -34,7 +41,7 @@ function App() {
         </Switch>
       </Suspense>
 
-      <Route render={ () => (<Redirect to={ ROUTES.About.path }/>) } />
+      <Route render={ () => (<ProxyRedirect to={ ROUTES.About.path }/>) }/>
     </>
   );
 }

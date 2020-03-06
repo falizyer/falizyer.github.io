@@ -1,5 +1,5 @@
-import type { FunctionComponent } from "react";
-import type { RouteProps } from "react-router-dom";
+import { FunctionComponent } from "react";
+import { RouteProps } from "react-router-dom";
 
 interface AppRoutes {
   About: string;
@@ -13,3 +13,8 @@ export type Routes = {
     path: string;
   }
 };
+
+export enum AppLanguages {
+  en = "en",
+  ru = "ru"
+}

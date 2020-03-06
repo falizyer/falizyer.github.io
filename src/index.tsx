@@ -3,13 +3,18 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
 
+import "./i18n";
+
 import App from "./App";
 
 import "./index.scss";
+import LanguageProvider from "./provider/LanguageProvider";
 
 ReactDOM.render((
-  <BrowserRouter basename="/build">
-    <App/>
+  <BrowserRouter basename={ process.env.REACT_APP_ROOT_PATH }>
+    <LanguageProvider>
+      <App/>
+    </LanguageProvider>
   </BrowserRouter>
 ), document.getElementById("root"));
 
