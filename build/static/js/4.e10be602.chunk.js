@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-news-board"]=this["webpackJsonpreact-news-board"]||[]).push([[4],{49:function(t,n,a){},51:function(t,n,a){"use strict";a.r(n);var e=a(0),c=a.n(e),o=a(16);a(49);n.default=function(){var t=Object(o.a)().t;return c.a.createElement("section",{className:"component-contacts"},c.a.createElement("div",{className:"component-contacts__content"},t("app.navigation.contacts")))}}}]);
+//# sourceMappingURL=4.e10be602.chunk.js.map
